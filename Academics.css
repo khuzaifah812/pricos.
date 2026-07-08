@@ -1,0 +1,261 @@
+/* ==========================
+   GENERAL STYLING
+========================== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: rgb(244, 247, 250);
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+    padding: 20px;
+}
+.register{
+    color: red;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+/* ==========================
+   ELEMENT SELECTORS
+========================== */
+
+
+table{
+    width: 70%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th{
+    background: darkblue;
+    color: white;
+    padding: 12px;
+}
+
+td{
+    padding: 10px;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background: rgb(242, 242, 242);
+}
+
+tr:hover{
+    background: rgb(214, 234, 248);
+}
+.headings{
+    background: navy;
+    color: white;
+}
+
+
+h1{
+    text-align: center;
+    color: darkblue;
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+h2{
+    text-align: center;
+    color: crimson;
+    margin-bottom: 20px;
+}
+
+h3{
+    color: darkblue;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+h4{
+    color: green;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+}
+
+p{
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+}
+
+span{
+    color: red;
+    font-weight: bold;
+}
+
+ul{
+    margin-left: 30px;
+}
+
+li{
+    margin-bottom: 8px;
+}
+
+u{
+    display: inline;
+    color: red;
+    font-weight: bold;
+}
+
+/* ==========================
+   CLASS SELECTORS
+========================== */
+
+.section{
+    background: white;
+    margin: 25px auto;
+    width: 80%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+}
+.pay{
+    display: flex;
+    flex-direction: rows;
+    justify-content: space-between;
+    
+}
+.mtn{
+    font-size: larger;
+    left: 40px;
+
+}
+.airtel{
+    font-size: larger;
+    margin-right: 40px;
+}
+.note{
+    margin-top: 15px;
+    background: #fff3cd;
+    color: #856404;
+    padding: 12px;
+    border-left: 5px solid orange;
+    border-radius: 5px;
+}
+
+.contact-info{
+    text-align: center;
+    background: darkblue;
+    color: white;
+    width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.amk{
+    font-weight: bold;
+    color: darkred;
+}
+
+.location{
+    text-align: center;
+    font-size: 20px;
+    color: darkgreen;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+/* ==========================
+   ID SELECTOR
+========================== */
+
+#SHS{
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ==========================
+   RESPONSIVE DESIGN
+========================== */
+
+@media(max-width:768px){
+
+    table{
+        width:100%;
+    }
+    .pay{
+        display: block;
+    }
+    h4{
+        text-align: center;
+    }
+
+    .section{
+        width:95%;
+    }
+
+    .contact-info{
+        width:95%;
+    }
+
+    h1{
+        font-size:28px;
+    }
+
+    h2{
+        font-size:22px;
+    }
+
+    p{
+        font-size:16px;
+    }
+}.admission{
+    width: 420px;
+    margin: 30px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, rgb(0, 51, 102), rgb(0, 80, 158));
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+
+    /* Animation */
+    animation: floatBox 4s ease-in-out infinite;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.admission:hover{
+    transform: scale(1.08);
+    box-shadow: 0 16px 30px rgba(0,0,0,0.5);
+}
+
+.admission span{
+    display: block;
+    margin-top: 12px;
+    color: gold;
+    font-size: 26px;
+}
+
+/* Floating animation */
+
+@keyframes floatBox{
+
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+
+}

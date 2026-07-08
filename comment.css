@@ -1,0 +1,379 @@
+/* =====================================
+   Pride College School
+   Comments Page CSS
+===================================== */
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+body{
+
+    background:#f2f6fc;
+
+    color:#333;
+
+}
+
+
+
+/* Header */
+
+header{
+
+    background:linear-gradient(
+        135deg,
+        #003366,
+        #0066cc
+    );
+
+    color:white;
+
+    text-align:center;
+
+    padding:35px 20px;
+
+}
+
+
+
+header img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:15px;
+
+}
+
+
+
+header h1{
+
+    font-size:35px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+header p{
+
+    font-size:18px;
+
+}
+
+
+
+
+/* Comment Container */
+
+
+.comment-container{
+
+    width:90%;
+
+    max-width:700px;
+
+    margin:40px auto;
+
+    background:white;
+
+    padding:35px;
+
+    border-radius:15px;
+
+    box-shadow:
+
+    0 10px 30px rgba(0,0,0,0.1);
+
+}
+
+
+
+
+
+/* Heading */
+
+
+form h2{
+
+    background:#003366;
+
+    color:white;
+
+    padding:15px;
+
+    border-radius:8px;
+
+    margin-bottom:25px;
+
+    text-align:center;
+
+}
+
+
+
+form h2 i{
+
+    margin-right:10px;
+
+}
+
+
+
+
+/* Input Group */
+
+
+.input-group{
+
+    margin-bottom:20px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+
+
+.input-group label{
+
+    font-weight:bold;
+
+    color:#003366;
+
+    margin-bottom:8px;
+
+}
+
+
+
+.input-group input,
+
+.input-group textarea{
+
+
+    padding:14px;
+
+    border-radius:8px;
+
+    border:1px solid #ccc;
+
+    outline:none;
+
+    font-size:16px;
+
+    transition:0.3s;
+
+}
+
+
+
+
+
+.input-group input:focus,
+
+.input-group textarea:focus{
+
+
+    border-color:#0066cc;
+
+
+    box-shadow:
+
+    0 0 8px rgba(0,102,204,.3);
+
+}
+
+
+
+textarea{
+
+    resize:none;
+
+}
+
+
+
+
+
+/* Submit Button */
+
+
+button{
+
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:30px;
+
+    background:#0066cc;
+
+    color:white;
+
+    font-size:18px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+
+}
+
+
+
+button:hover{
+
+
+    background:#003366;
+
+    transform:translateY(-3px);
+
+
+}
+
+
+
+
+
+/* Success Message */
+
+
+#commentSuccess{
+
+
+    display:none;
+
+    margin-top:30px;
+
+    padding:25px;
+
+    text-align:center;
+
+    background:#e8fff0;
+
+    border-left:6px solid green;
+
+    border-radius:10px;
+
+
+    animation:show .5s ease;
+
+
+}
+
+
+
+#commentSuccess i{
+
+    color:green;
+
+    font-size:45px;
+
+    margin-bottom:10px;
+
+}
+
+
+
+
+
+@keyframes show{
+
+
+from{
+
+    opacity:0;
+
+    transform:translateY(-20px);
+
+}
+
+
+to{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+}
+
+
+
+
+
+/* Footer */
+
+
+footer{
+
+
+    background:#003366;
+
+    color:white;
+
+    text-align:center;
+
+    padding:20px;
+
+    margin-top:40px;
+
+
+}
+
+
+
+
+
+/* Mobile Design */
+
+
+@media(max-width:700px){
+
+
+header h1{
+
+    font-size:25px;
+
+}
+
+
+
+.comment-container{
+
+
+    width:95%;
+
+    padding:20px;
+
+}
+
+
+
+}
