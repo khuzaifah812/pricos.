@@ -97,7 +97,7 @@ form.addEventListener("submit", function(event){
 
         window.scrollTo({
 
-            top:0,
+            bottom:1,
 
             behavior:"smooth"
 
